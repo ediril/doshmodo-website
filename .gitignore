@@ -1,0 +1,8 @@
+vendor/
+
+.DS_Store
+*.db*
+*.log
+ftp_config.yaml
+twitter-header.png
+prompt.txt

@@ -1,0 +1,32 @@
+RewriteEngine On
+
+# Force HTTPS redirect
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.notemodo\.com$ [NC]
+RewriteRule ^(.*)$ https://notemodo.com/$1 [L,R=301]
+
+# Only allow notemodo.com (non-www)
+RewriteCond %{HTTP_HOST} !^notemodo\.com$ [NC]
+RewriteRule ^ - [R=404,L]
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, route everything to index.php
+RewriteRule ^ index.php [L,QSA]
+
+# Allow direct access to static files
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# PHP settings
+<IfModule mod_php.c>
+    php_flag display_errors On
+    php_value error_reporting E_ALL
+</IfModule>
