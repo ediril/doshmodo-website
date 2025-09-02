@@ -27,21 +27,13 @@ $current_year = date('Y');
         <div class="hero-content">
             <div class="hero-container">
                 <h1 class="hero-title">Find Your Way of Money</h1>
-                <p class="hero-subtitle">The practical finance app that focuses on what matters most:<br>Building healthy financial habits.</p>
-                
-                <div class="waitlist-form">
-                    <h3>Join the Waitlist</h3>
-                    <form class="email-form">
-                        <input type="email" placeholder="Enter your email address" class="email-input" required>
-                        <button type="submit" class="submit-btn">Get Early Access</button>
-                    </form>
-                </div>
+                <p class="hero-subtitle">The practical finance app that focuses on what matters most:<br>Building healthy financial habits</p>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="video-section">
+        <!--<section class="video-section">
             <div class="container">
                 <h2 class="section-title">See DoshModo in Action</h2>
                 <div class="video-placeholder">
@@ -49,7 +41,7 @@ $current_year = date('Y');
                     <p>Coming Soon: Product Demo Video</p>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="features">
             <div class="container">
@@ -78,9 +70,9 @@ $current_year = date('Y');
 
         <section class="ai-advisor">
             <div class="container">
+                <h2 class="section-title">Meet Your AI Financial Advisor</h2>
                 <div class="ai-content">
                     <div class="ai-text">
-                        <h2>Meet Your AI Financial Advisor</h2>
                         <p>Get personalized insights and recommendations based on your spending patterns, balance trends, and financial goals. Our AI advisor helps you make smarter decisions without overwhelming you with data.</p>
                     </div>
                     <div class="ai-visual">
@@ -98,13 +90,12 @@ $current_year = date('Y');
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Balance Your Finances?</h2>
-                    <p>Join thousands of others who are taking control of their financial future with DoshModo.</p>
-                    
+                    <h2>Ready to Find Your Way With Money?</h2>
                     <div class="waitlist-form">
+                        <h3>Join the Waitlist</h3>
                         <form class="email-form">
                             <input type="email" placeholder="Enter your email address" class="email-input" required>
-                            <button type="submit" class="submit-btn">Join Waitlist</button>
+                            <button type="submit" class="submit-btn">Join</button>
                         </form>
                     </div>
                 </div>
@@ -115,11 +106,8 @@ $current_year = date('Y');
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo.png" alt="DoshModo" class="logo-img">
-                    <span class="logo-text">DoshModo</span>
-                </div>
-                <p>&copy; <?php echo $current_year; ?> DoshModo. All rights reserved.</p>
+                <p>🌘 Newmoon Software &copy; <?php echo $current_year; ?></p>
+                <p>All rights reserved.</p>
             </div>
         </div>
     </footer>

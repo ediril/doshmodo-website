@@ -19,7 +19,7 @@ body {
 
 .hero {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 20%, #ffd700 60%, #ffb347 85%, #ff6b35 100%);
-    min-height: 100vh;
+    min-height: 65vh;
     position: relative;
     overflow: hidden;
 }
@@ -72,10 +72,11 @@ body {
     position: relative;
     z-index: 10;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(65vh - 40px);
     text-align: center;
+    padding-top: 75px;
 }
 
 .hero-container {
@@ -84,7 +85,7 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 800;
     color: #ffffff;
     margin-bottom: 24px;
@@ -94,10 +95,13 @@ body {
 
 .hero-subtitle {
     font-size: 1.25rem;
+    font-weight: bold;
     color: rgba(255,255,255,0.9);
     margin-bottom: 48px;
     line-height: 1.7;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+    text-stroke: 1px rgba(0,0,0,0.5);
 }
 
 .waitlist-form {
@@ -160,7 +164,7 @@ body {
 }
 
 .features {
-    padding: 60px 0;
+    padding: 60px 0 40px 0;
     background: linear-gradient(to bottom, #ffffff, #f8f9fa);
     position: relative;
 }
@@ -255,7 +259,7 @@ body {
 }
 
 .ai-advisor {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     position: relative;
 }
@@ -388,7 +392,7 @@ body {
 }
 
 .cta-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 20%, #ffd700 60%, #ffb347 85%, #ff6b35 100%);
     position: relative;
     margin-top: 40px;
@@ -433,7 +437,7 @@ body {
 
 .footer {
     background: #1a1a1a;
-    padding: 40px 0;
+    padding: 20px 0;
     color: white;
     border-top: 4px solid #ffd700;
     position: relative;
@@ -451,13 +455,19 @@ body {
 
 .footer-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 5px;
 }
 
 .footer .logo {
+    gap: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
     gap: 8px;
 }
 
