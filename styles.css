@@ -66,7 +66,7 @@ body {
     position: relative;
     z-index: 10;
     min-height: calc(65vh - 40px);
-    padding-top: 75px;
+    padding-top: 90px;
 }
 
 .hero-container {
@@ -101,6 +101,9 @@ body {
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .waitlist-form h3 {
@@ -110,25 +113,7 @@ body {
     margin-bottom: 24px;
 }
 
-/* Bootstrap handles form layout */
-
-.email-input {
-    flex: 1;
-    min-width: 280px;
-    padding: 16px 20px;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.email-input:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
-}
-
-.submit-btn {
+.collectiq-submit-btn {
     background: linear-gradient(135deg, #ffd700, #ffb347);
     color: #1a1a1a;
     padding: 16px 32px;
@@ -142,10 +127,30 @@ body {
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
-.submit-btn:hover {
+.collectiq-submit-btn:hover {
     background: linear-gradient(135deg, #ffb347, #ff6b35);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+.collectiq-submit-btn .collectiq-highlight,
+.collectiq-submit-btn .collectiq-shimmer-container,
+.collectiq-submit-btn .collectiq-backdrop {
+    display: none;
+}
+
+.collectiq-input {
+    color: #333;
+}
+
+/* Placeholder text color (separate) */
+.collectiq-input::placeholder {
+    color: #bbb;
+}
+
+.collectiq-input-container.collectiq-thank-you {
+    color: #fff;
+    background-color: #ff6b35;
 }
 
 .features {

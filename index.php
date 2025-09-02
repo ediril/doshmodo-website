@@ -1,7 +1,4 @@
-<?php
-// DoshModo Landing Page
-$current_year = date('Y');
-?>
+<?php require_once 'collectiq/component/WaitlistComponent.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +6,9 @@ $current_year = date('Y');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoshModo - Find your way of money</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <?php $waitlist = new WaitlistComponent(); echo $waitlist->renderStyles(); ?>
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -97,13 +96,12 @@ $current_year = date('Y');
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content text-center">
-                    <h2>Ready to Find Your Way With Money?</h2>
+                    <h2>Ready to Find Your Way of Money?</h2>
                     <div class="waitlist-form mx-auto">
                         <h3>Join the Waitlist</h3>
-                        <form class="d-flex flex-wrap justify-content-center gap-3">
-                            <input type="email" placeholder="Enter your email address" class="email-input flex-grow-1" required>
-                            <button type="submit" class="submit-btn">Join</button>
-                        </form>
+                        <?php 
+                            echo $waitlist->renderForm('Enter your email address');
+                        ?>
                     </div>
                 </div>
             </div>
@@ -113,13 +111,15 @@ $current_year = date('Y');
     <footer class="footer">
         <div class="container">
             <div class="footer-content d-flex flex-column align-items-center justify-content-center">
-                <p>🌘 Newmoon Software &copy; <?php echo $current_year; ?></p>
+                <p>🌘 Newmoon Software &copy; <?php echo date('Y'); ?></p>
                 <p>All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <?php echo $waitlist->renderScripts(); ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/collectiq/component/assets/waitlist.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
