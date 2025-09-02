@@ -5,11 +5,11 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.notemodo\.com$ [NC]
-RewriteRule ^(.*)$ https://notemodo.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.doshmodo\.com$ [NC]
+RewriteRule ^(.*)$ https://doshmodo.com/$1 [L,R=301]
 
-# Only allow notemodo.com (non-www)
-RewriteCond %{HTTP_HOST} !^notemodo\.com$ [NC]
+# Only allow doshmodo.com (non-www)
+RewriteCond %{HTTP_HOST} !^doshmodo\.com$ [NC]
 RewriteRule ^ - [R=404,L]
 
 # If the requested file or directory exists, serve it directly
