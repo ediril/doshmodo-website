@@ -33,15 +33,14 @@
     </header>
 
     <main>
-        <!--<section class="video-section">
+        <section class="video-section">
             <div class="container">
-                <h2 class="section-title">See DoshModo in Action</h2>
-                <div class="video-placeholder">
-                    <div class="play-button">▶</div>
-                    <p>Coming Soon: Product Demo Video</p>
+                <h2 class="section-title text-center">See DoshModo in Action</h2>
+                <div class="video-container text-center">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/-wv7KriIYKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <section class="features">
             <div class="container">
@@ -118,6 +117,7 @@
     </footer>
 
     <?php echo $waitlist->renderScripts(); ?>
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/collectiq/component/assets/waitlist.js"></script>
     <script src="script.js"></script>
