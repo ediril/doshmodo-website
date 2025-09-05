@@ -435,7 +435,7 @@ body {
 
 .footer {
     background: #1a1a1a;
-    padding: 20px 0;
+    padding: 10px 0;
     color: white;
     border-top: 4px solid #ffd700;
     position: relative;
@@ -463,6 +463,12 @@ body {
 .footer .logo-text {
     font-size: 18px;
     color: #ffd700;
+}
+
+.footer-links a:hover {
+    color: #ffd700 !important;
+    background: rgba(255, 215, 0, 0.1) !important;
+    transform: translateY(-2px);
 }
 
 .footer p {

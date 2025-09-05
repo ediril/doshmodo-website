@@ -1,36 +1,10 @@
-<?php require_once 'collectiq/component/WaitlistComponent.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoshModo - Find your way of money</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <?php $waitlist = new WaitlistComponent(); echo $waitlist->renderStyles(); ?>
-    <link rel="stylesheet" href="styles.css">
+<?php 
+require_once 'common.php';
+$common = new Common();
+?>
+<?php echo $common->renderHead(); ?>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="hero">
-        <nav class="nav">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center logo">
-                    <img src="logo.png" alt="DoshModo" class="logo-img">
-                    <span class="logo-text">DoshModo</span>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="hero-content d-flex align-items-start justify-content-center text-center">
-            <div class="hero-container">
-                <h1 class="hero-title">Find Your Way of Money</h1>
-                <p class="hero-subtitle">The practical finance app that focuses on what matters most:<br>Building healthy financial habits</p>
-            </div>
-        </div>
-    </header>
+    <?php echo $common->renderMainHeader('Find Your Way of Money', 'The practical finance app that focuses on what matters most:<br>Building healthy financial habits'); ?>
 
     <main>
         <section class="video-section">
@@ -100,28 +74,13 @@
                     <h2>Ready to Find Your Way of Money?</h2>
                     <div class="waitlist-form mx-auto">
                         <h3>Join the Waitlist</h3>
-                        <?php 
-                            echo $waitlist->renderForm('Enter your email address');
-                        ?>
+                        <?php echo $common->renderWaitlistForm('Enter your email address'); ?>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content d-flex flex-column align-items-center justify-content-center">
-                <p>🌘 Newmoon Software &copy; <?php echo date('Y'); ?></p>
-                <p>All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php echo $common->renderFooter(); ?>
 
-    <?php echo $waitlist->renderScripts(); ?>
-    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/collectiq/component/assets/waitlist.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<?php echo $common->renderScripts(); ?>
