@@ -13,11 +13,20 @@ $common = new Common();
                     <div class="col-lg-8">
                         <?php 
                         $blogPosts = [
-                            /*[
-                                'title' => '5 Simple Steps to Start Building Your Emergency Fund',
-                                'content' => 'An emergency fund is your financial safety net. Learn how to build one from scratch, even on a tight budget, and discover the peace of mind that comes with financial preparedness.',
-                                'date' => '2024-12-15',
-                            ],*/
+                            [
+                                'title' => 'Hello World',
+                                'content' => "
+                                            I've been busy building the basic functionality of a money management app, such as setting up accounts, tracking and modifying expenses, tagging, calculating balances. While these features are essential, they are the bare minimum for a useful app.
+
+                                            The fun is beginning now. I have several other ideals planned to make this a more effective and fun application to use. Tracking expenses, creating budgets and handling money in general is not exactly thrilling, but here are some of my ideas to make it more engaging:
+
+                                            • Gamify the experience: Earn points for taking certain actions and completing quests.
+                                            • Visualize your progress: Use charts and graphs to understand your financial journey.
+                                            • AI-driven insights: Leverage artificial intelligence to provide personalized financial advice and tips.
+
+                                            Stay tuned for more to come. Sign up to get the latest updates in your email!",
+                                'date' => '2025-09-05',
+                            ],
                         ];
                         
                         foreach ($blogPosts as $post): 
@@ -34,7 +43,7 @@ $common = new Common();
                                     <a href="#" class="text-decoration-none text-dark stretched-link"><?php echo htmlspecialchars($post['title']); ?></a>
                                 </h3>
                                 
-                                <p class="text-muted mb-0"><?php echo htmlspecialchars($post['content']); ?></p>
+                                <p class="text-muted mb-0"><?php echo nl2br(htmlspecialchars($post['content'])); ?></p>
                             </div>
                         </article>
                         <?php endforeach; ?>
