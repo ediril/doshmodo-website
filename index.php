@@ -37,7 +37,9 @@
             <div class="container">
                 <h2 class="section-title text-center">See DoshModo in Action</h2>
                 <div class="video-container text-center">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/-wv7KriIYKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="responsive-video">
+                        <iframe src="https://www.youtube.com/embed/-wv7KriIYKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
