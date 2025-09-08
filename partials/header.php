@@ -9,17 +9,17 @@ $headerStyle = $isMainHeader ? '' : 'style="min-height: 40vh;"';
     <nav class="nav">
         <div class="container-fluid px-4">
             <?php if ($isMainHeader): ?>
-                <div class="d-flex align-items-center logo">
+                <a href="/" class="d-flex align-items-center logo text-decoration-none">
                     <img src="logo.png" alt="DoshModo" class="logo-img">
                     <span class="logo-text">DoshModo</span>
-                </div>
+                </a>
             <?php else: ?>
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center logo">
+                    <a href="/" class="d-flex align-items-center logo text-decoration-none">
                         <img src="logo.png" alt="DoshModo" class="logo-img">
                         <span class="logo-text">DoshModo</span>
-                    </div>
-                    <a href="index.php" class="btn text-light text-decoration-none">← Back to Home</a>
+                    </a>
+                    <a href="/" class="btn text-light text-decoration-none">← Back to Home</a>
                 </div>
             <?php endif; ?>
         </div>

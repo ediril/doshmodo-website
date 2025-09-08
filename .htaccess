@@ -12,6 +12,16 @@ RewriteRule ^(.*)$ https://doshmodo.com/$1 [L,R=301]
 RewriteCond %{HTTP_HOST} !^doshmodo\.com$ [NC]
 RewriteRule ^ - [R=404,L]
 
+# Redirect .php extension to clean URLs
+RewriteCond %{THE_REQUEST} /([^?\s]*?)\.php[\s?] [NC]
+RewriteRule ^ /%1? [R=301,L]
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
 # If the requested file or directory exists, serve it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
