@@ -30,8 +30,10 @@ $common = new Common();
                         ];
                         
                         foreach ($blogPosts as $post): 
+                            $anchor = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', trim($post['title'])));
+                            $anchor = trim($anchor, '-');
                         ?>
-                        <article class="bg-white rounded-4 shadow-sm mb-4 overflow-hidden">
+                        <article class="bg-white rounded-4 shadow-sm mb-4 overflow-hidden" id="<?php echo $anchor; ?>">
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div class="d-flex gap-3 text-muted small">
@@ -40,7 +42,7 @@ $common = new Common();
                                 </div>
                                 
                                 <h3 class="h4 mb-3">
-                                    <a href="#" class="text-decoration-none text-dark stretched-link"><?php echo htmlspecialchars($post['title']); ?></a>
+                                    <a href="#<?php echo $anchor; ?>" class="text-decoration-none text-dark stretched-link"><?php echo htmlspecialchars($post['title']); ?></a>
                                 </h3>
                                 
                                 <p class="text-muted mb-0"><?php echo nl2br(htmlspecialchars($post['content'])); ?></p>
