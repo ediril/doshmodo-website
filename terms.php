@@ -52,7 +52,7 @@ $common = new Common();
                             <p class="mb-4">We reserve the right to modify these terms at any time. We will notify users of any material changes to these terms through the app or email.</p>
 
                             <h2 class="h4 mb-3">Contact Information</h2>
-                            <p class="mb-4">Questions about the Terms of Service should be sent to us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">legal@doshmodo.com</a></p>
+                            <p class="mb-4">Questions about the Terms of Service should be sent to us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">support@doshmodo.com</a></p>
                         </div>
                     </div>
                 </div>

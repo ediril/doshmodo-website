@@ -53,7 +53,7 @@ $common = new Common();
                             </ul>
 
                             <h2 class="h4 mb-3">Contact Us</h2>
-                            <p class="mb-4">If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">privacy@doshmodo.com</a></p>
+                            <p class="mb-4">If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">support@doshmodo.com</a></p>
                         </div>
                     </div>
                 </div>
