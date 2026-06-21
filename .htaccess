@@ -1,5 +1,7 @@
 RewriteEngine On
 
+ErrorDocument 404 /404.php
+
 # Force HTTPS redirect
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -26,8 +28,8 @@ RewriteRule ^(.*)$ $1.php [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Otherwise, route everything to index.php
-RewriteRule ^ index.php [L,QSA]
+# Unknown clean URLs should return 404 instead of showing the homepage.
+RewriteRule ^ - [R=404,L]
 
 # Allow direct access to static files
 <FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">
