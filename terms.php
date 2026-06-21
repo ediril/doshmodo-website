@@ -16,13 +16,13 @@ $common = new Common();
                             <p class="mb-4">By accessing and using DoshModo, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
 
                             <h2 class="h4 mb-3">Description of Service</h2>
-                            <p class="mb-4">DoshModo is a financial management application that helps users track their finances, monitor account balances, and build healthy financial habits through gamification and AI-powered insights.</p>
+                            <p class="mb-4">DoshModo is a spend-audit and recurring spend intelligence application that helps users import financial activity, identify vendors and recurring charges, monitor statement-backed records, and produce cleanup/export workflows for business or personal use.</p>
 
                             <h2 class="h4 mb-3">User Responsibilities</h2>
                             <p class="mb-3">As a user of DoshModo, you agree to:</p>
                             <ul class="mb-4">
                                 <li>You must be 18+ to use DoshModo</li>
-                                <li>Use for personal finance tracking only, not commercial use</li>
+                                <li>Use DoshModo within the limits of your plan, workspace, or account type</li>
                                 <li>You own your data but grant us permission to provide the service</li>
                                 <li>We don't guarantee perfection and aren't liable for damages</li>
                                 <li>You can stop using the service anytime</li>
@@ -30,14 +30,14 @@ $common = new Common();
 
                             <h2 class="h4 mb-3">Account Security</h2>
                             <p class="mb-3">You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to:</p>
-                            <ul class="mb-4"></ul>
+                            <ul class="mb-4">
                                 <li>Provide accurate and complete information when creating your account</li>
                                 <li>Keep your account credentials secure and confidential</li>
                                 <li>Notify us immediately of any security breaches or unauthorized use</li>
                             </ul>
 
                             <h2 class="h4 mb-3">Financial Data</h2>
-                            <p class="mb-4">DoshModo helps you manage your financial information. You are responsible for the accuracy of the financial data you input. We provide tools and insights, but we are not financial advisors and our service does not constitute financial advice.</p>
+                            <p class="mb-4">DoshModo helps you organize financial activity, statements, vendors, recurring charges, and spend-audit outputs. You are responsible for the accuracy of the data you upload, import, edit, categorize, or export. We provide analysis and workflow tools, but we are not financial advisors, accountants, or tax professionals, and our service does not constitute financial, accounting, tax, or legal advice.</p>
 
                             <h2 class="h4 mb-3">Intellectual Property</h2>
                             <p class="mb-4">The DoshModo application, its original content, features, and functionality are owned by Newmoon Software and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
@@ -52,7 +52,7 @@ $common = new Common();
                             <p class="mb-4">We reserve the right to modify these terms at any time. We will notify users of any material changes to these terms through the app or email.</p>
 
                             <h2 class="h4 mb-3">Contact Information</h2>
-                            <p class="mb-4">Questions about the Terms of Service should be sent to us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">support@doshmodo.com</a></p>
+                            <p class="mb-4">Questions about the Terms of Service should be sent to us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" >support@doshmodo.com</a></p>
                         </div>
                     </div>
                 </div>

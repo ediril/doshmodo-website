@@ -8,7 +8,7 @@ class Common {
         $this->waitlist = new WaitlistComponent();
     }
     
-    public function renderHead($title = 'DoshModo - Find your way of money', $description = 'The practical finance app that focuses on what matters most: Building healthy financial habits') {
+    public function renderHead($title = 'DoshModo - Monthly money review', $description = 'See what changed across your bank, card, statement, CSV, and Stripe activity: vendors, recurring spend, renewals, unusual charges, and review items.') {
         $waitlist = $this->waitlist;
         ob_start();
         include 'partials/head.php';
@@ -42,7 +42,7 @@ class Common {
         return ob_get_clean();
     }
     
-    public function renderWaitlistForm($placeholder = 'Enter your email address') {
+    public function renderWaitlistForm($placeholder = 'email@example.com') {
         return $this->waitlist->renderForm($placeholder);
     }
 }

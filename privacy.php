@@ -25,7 +25,7 @@ $common = new Common();
                             <h2 class="h4 mb-3">Information We Collect</h2>
                             <ul class="mb-4">
                                 <li><strong>Account Information:</strong> Email address, name, and account preferences</li>
-                                <li><strong>Financial Data:</strong> Transaction information, account balances, and financial goals you choose to track</li>
+                                <li><strong>Financial Data:</strong> Statements, transactions, vendors, account balances, recurring charges, imported files, exports, and related notes or categories you choose to track</li>
                                 <li><strong>Usage Data:</strong> How you interact with our app to improve our services</li>
                                 <li><strong>Device Information:</strong> Device type, operating system, and app version</li>
                             </ul>
@@ -33,14 +33,14 @@ $common = new Common();
                             <h2 class="h4 mb-3">How We Use Your Information</h2>
                             <ul class="mb-4">
                                 <li>Provide and improve our financial management services</li>
-                                <li>Generate personalized insights and recommendations</li>
+                                <li>Generate spend-audit outputs, recurring vendor analysis, cleanup recommendations, and related reports</li>
                                 <li>Ensure the security of your account and data</li>
                                 <li>Communicate with you about updates and features</li>
                                 <li>Comply with legal obligations</li>
                             </ul>
 
                             <h2 class="h4 mb-3">Data Security</h2>
-                            <p class="mb-4">We implement industry-standard security measures to protect your financial information, including encryption, secure data storage, and regular security audits. Your financial data is never shared with third parties without your explicit consent.</p>
+                            <p class="mb-4">We use reasonable security measures to protect your financial information, including secure data handling practices appropriate to the service. Your financial data is not sold and is not shared with third parties without your consent except as needed to operate the service or comply with legal obligations.</p>
 
                             <h2 class="h4 mb-3">Your Rights</h2>
                             <p class="mb-3">You have the right to:</p>
@@ -53,7 +53,7 @@ $common = new Common();
                             </ul>
 
                             <h2 class="h4 mb-3">Contact Us</h2>
-                            <p class="mb-4">If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" style="color: #ffd700;">support@doshmodo.com</a></p>
+                            <p class="mb-4">If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:support@doshmodo.com" class="text-decoration-none" >support@doshmodo.com</a></p>
                         </div>
                     </div>
                 </div>
