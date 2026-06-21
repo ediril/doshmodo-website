@@ -132,6 +132,17 @@ a:hover {
     max-width: 680px;
 }
 
+.hero-buyer {
+    color: var(--text-primary);
+    display: block;
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.55;
+    margin: 1.35rem auto 0;
+    max-width: 620px;
+    text-transform: uppercase;
+}
+
 .hero-subtitle code,
 .terminal-chip {
     color: var(--terminal-accent);
@@ -261,6 +272,7 @@ section {
 
 .features,
 .ai-advisor,
+.review-example,
 .video-section,
 .cta-section,
 main > section.py-5 {
@@ -278,6 +290,10 @@ main > section.py-5 {
     background: var(--bg-secondary);
 }
 
+.review-example {
+    background: var(--bg-primary);
+}
+
 .cta-section {
     margin-top: 0;
     background: var(--bg-primary);
@@ -285,6 +301,7 @@ main > section.py-5 {
 
 .features::before,
 .ai-advisor::before,
+.review-example::before::before,
 .video-section::after,
 .cta-section::before,
 .section-title::after,
@@ -301,8 +318,24 @@ main > section.py-5 {
     text-transform: uppercase;
 }
 
+.section-copy {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.pain-line {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 850px;
+}
+
 .feature-card,
 .ai-card,
+.review-panel,
 .bg-white {
     background: linear-gradient(180deg, rgba(255,255,255,0.018), transparent 42%), var(--card-bg) !important;
     border: 1px solid var(--border-color) !important;
@@ -397,6 +430,45 @@ main > section.py-5 {
 .ai-card {
     padding: 1rem;
 }
+
+.review-panel {
+    overflow: hidden;
+}
+
+.review-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.review-row:first-child {
+    border-top: 0;
+}
+
+.review-row span {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.review-row span:first-child {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.review-header {
+    background: var(--card-header-bg);
+}
+
+.review-header span {
+    color: var(--text-muted) !important;
+    font-size: 0.74rem;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+}
+
 
 .ai-avatar {
     color: var(--terminal-accent);
@@ -527,6 +599,7 @@ main > section.py-5 {
 
     .features,
     .ai-advisor,
+    .review-example,
     .video-section,
     .cta-section,
     main > section.py-5 {
@@ -539,6 +612,11 @@ main > section.py-5 {
 
     .audit-metric {
         min-height: 76px;
+    }
+
+    .review-row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
 
     .bg-white {
